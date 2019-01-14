@@ -1,0 +1,102 @@
+/* Website css styles */
+/* General Styles*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hamburger {
+    position: fixed;
+    left: 80%;
+    cursor: pointer;
+}
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    width: 30px;
+    height: 2px;
+    padding-top: 15px;
+}
+
+.hero {
+    height: 100;
+    padding-top: 25vh;
+    text-align: center;
+    background: #70a6ff;
+    color: #f9f9f9;
+}
+
+.resume {
+    text-align: center;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .hero {
+        height: 100%;
+        padding-top: 25vh;
+        text-align: center;
+        background: #70a6ff;
+        color: #f9f9f9;
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 248, 230);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        display: block;
+        transition: 0.3s;
+        color: #0DADFF;
+    }
+    .overlay a:hover, 
+    .overlay a:focus {
+        color: #fff;
+    }
+    .overlay .close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .section {
+        text-align: center;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+}

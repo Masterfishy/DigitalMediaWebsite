@@ -1,13 +1,23 @@
 <!DOCTYPE html>
     <head>
         <title>Zach's 4th try for a website.</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     </head>
     <body>
-        <div class="hamburger">
-            <button>lines</button>
+        <script src="js/scripts.js"></script>
+        <div id="menus" class="overlay">
+            <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a> 
+                <a href="projects.html">Projects</a>
+            </div>
         </div>
+        <div class="hamburger">
+            <button onclick="openMenu()">lines</button>
+        </div>
+
         <div class="section hero">
             <p>OH HEY IT'S,</p>
             <h2>Zach Long</h2>
