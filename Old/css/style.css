@@ -4,6 +4,8 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    background: #060002;
+    color: #f9f9f9;
 }
 
 h2 {
@@ -31,8 +33,7 @@ a {
     height: 100;
     padding-top: 25vh;
     text-align: center;
-    background: #70a6ff;
-    color: #f9f9f9;
+    color: #EDEECC;
 }
 
 .resume {
@@ -45,8 +46,16 @@ a {
         height: 100%;
         padding-top: 25vh;
         text-align: center;
-        background: #70a6ff;
-        color: #f9f9f9;
+    }
+    
+    .circle {
+        position: absolute;
+        left: 13vw;
+        bottom: 200px;
+        background-color: #F75193;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
     }
     
     .overlay {
